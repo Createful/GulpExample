@@ -1,2 +1,2 @@
 # GulpExample
-An example of Gulp for Michelle's blog post
+Sample Gulp project to go along with the blog post "Streamlining Front End Development with Gulp.js" https://www.createful.com/2015/gulp-js-tutorial/
