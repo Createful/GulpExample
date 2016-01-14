@@ -24,7 +24,9 @@ gulp.task('scripts', function() {
 gulp.task('styles', function() {
   return gulp.src('src/scss/**/*.scss')
     .pipe(sass())
-    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
+    .pipe(autoprefixer(
+    	{browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1']
+    }))
     .pipe(gulp.dest('assets/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
